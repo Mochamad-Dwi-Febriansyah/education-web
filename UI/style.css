@@ -1,0 +1,221 @@
+:root{
+    --midnight-green: #215259ff;
+    --old-lace: #FFF7E7ff;
+    --green-yellow: #A0F45Eff;
+    --green: rgb(59, 231, 50);
+    --tea-green: #E1FFCAff;
+    --myrtle-green: #49777Dff;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+body{
+    background-color: var(--tea-green);
+}
+.navbar{
+    background-color: var(--old-lace);
+}
+/* img{
+    width: 100%;
+    height: 100%;
+} */
+.carousel{
+    background-color: var(--tea-green);
+} 
+.image-carousel{
+    flex: 1 1 0; 
+    height: 400px;
+}
+.caption-carousel{
+    flex: 2 1 0;
+}
+.image-carousel img{
+    object-fit: cover;
+}
+.caption-carousel .caption-title{
+    color: var(--midnight-green);
+    text-shadow: 2px 2px 0 var(--myrtle-green);
+}
+.caption-carousel .btn.btn-green-yellow{
+    background-color: var(--green-yellow);
+}
+
+/* .section-card{
+    margin-top: -40px;
+} */
+ 
+.card{ 
+    background-color: var(--midnight-green); 
+    color: #fff; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+}
+.card-body{
+    flex: 1 1 0;
+}
+.card-atas .cr-image{
+    width: 100px; 
+}
+.card-atas img{ 
+    margin-top: -15px;
+    transform: scale(2.1);
+}
+.card-atas .card-title{
+    padding: 10px;
+    border-bottom: 3px solid #fff;
+} 
+.card-body .card-text{
+    font-size: .8rem;
+} 
+
+.bagian{
+    /* background-color: var(--midnight-green);  */
+    flex-wrap: wrap;
+}
+.bagian .image{
+    min-width: 350px;
+    flex: 2 1 0;
+} 
+.bagian .image img{
+   width: 100%;
+}
+.bagian .caption{
+    flex: 3 1 0;
+    background-color: var(--old-lace);
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    box-shadow: -10px 15px 30px var(--myrtle-green);
+}
+.bagian .khusus{ 
+    flex: 3 1 0;
+    background-image: url(assets/7-removebg-preview.png);
+    background-position:left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bagian .caption h1, .bagian .khusus h1{
+    color: var(--midnight-green);
+    text-shadow: 2px 2px 0 var(--myrtle-green);
+}
+.bagian .caption span, .bagian .khusus span{
+    display: inline-block;
+}
+ 
+.bagian .image.image-khusus{
+    filter: drop-shadow(-5px 10px 10px var(--myrtle-green));
+}
+.bagian .image.image-khusus img{
+    width: 100%;
+}
+.bagian .caption button, .bagian .khusus button{
+    background-color: var(--midnight-green);
+    color: #fff;
+}
+
+.hero{
+    background-image: url(assets/9.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-box .image{
+    flex: 1 1 300px;
+}
+.hero-box .hero-text{
+    margin-top: -80px;
+    color: var(--midnight-green);
+    text-shadow: 2px 2px 0 var(--myrtle-green);
+}
+.hero-box .hero-text h1{
+    font-weight: 800;
+}
+
+footer{
+    background-color: rgba(80, 202, 119, 0.81); 
+    color: #fff;
+}
+.copyright{ 
+    width: 300px;
+    font-size: .8rem; 
+    border-bottom: 20px solid var(--midnight-green); 
+    border-left: 20px solid transparent; 
+}
+.copyright span{   
+    position: relative;
+    left: 30%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    /* background-color: var(--midnight-green); */
+     
+}
+
+.banner{
+    background-image: url(assets/9.png);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-title{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 800;
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: black; 
+}
+.sub-banner{
+    background-color: var(--green-yellow);
+}
+.sub-banner .image{  
+    margin-right: -10px;
+    z-index: 999; 
+}
+.sub-banner .image img{
+    width: 100%; 
+    transform: scale(3);
+}
+ 
+.sub-banner .description{ 
+    background-color: var(--old-lace);
+    padding: 1rem 2rem 1rem 4rem;
+    border-radius: 1rem;
+    margin-left: -40px;
+}
+@media screen and (max-width: 765px){ 
+    .carouselny{
+        display: flex;
+        flex-direction: column;
+    }
+    .caption-carousel .caption-title{
+        font-size: 150%; 
+    }
+    .caption-carousel span{
+        font-size: 85%; 
+    }  
+    .sub-banner .image{ 
+        margin-right: 0; 
+    }
+    .sub-banner .image img{ 
+        transform: scale(1);
+    }
+    .sub-banner .description{ 
+        margin-top: -70px;
+        margin-left: 0;
+        padding: 2rem 2rem;
+    }
+    .sub-banner{
+        display: flex;
+        flex-direction: row-reverse; 
+        flex-wrap: wrap;  
+    }
+}
